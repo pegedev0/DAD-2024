@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  -->
+<web-app >
+	<display-name>asd</display-name>
+	
+	<servlet>
+		<servlet-name>SensorConnection</servlet-name>
+		<servlet-class>es.us.lsi.dad.SensorConnection</servlet-class>
+	</servlet>
+	
+	
+	<servlet>
+		<servlet-name>LedActuatorConnection</servlet-name>
+		<servlet-class>es.us.lsi.dad.LedActuatorConnection</servlet-class>
+	</servlet>
+
+	
+	<servlet-mapping>
+		<servlet-name>LedActuatorConnection</servlet-name>
+		<url-pattern>/LedActuatorConnection</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>SensorConnection</servlet-name>
+		<url-pattern>/SensorConnection</url-pattern>
+	</servlet-mapping>
+</web-app>
